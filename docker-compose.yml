@@ -1,0 +1,17 @@
+services:
+  laos-sim-app:
+    build: .
+    container_name: laos-sim-app
+    restart: unless-stopped
+    ports:
+      - "8421:80"
+    networks:
+      - swag-network
+    labels:
+      # SWAG reverse proxy — create /config/nginx/proxy-confs/laos-sim.subdomain.conf
+      - "swag=nginx"
+      - "swag.host=laos-sim"
+
+networks:
+  swag-network:
+    external: true

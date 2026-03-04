@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Compare Laos SIM card options for tourists — Unitel, Lao Telecom, eSIM providers, coverage, prices, and buying tips for 2025–2026." />
+  <title>Stay Connected in Laos · SIM Card Guide 2025–2026</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">Laos <span>SIM</span> Guide</a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#comparison">Compare</a></li>
+      <li><a href="#providers">Providers</a></li>
+      <li><a href="#esim">eSIM</a></li>
+      <li><a href="#coverage">Coverage</a></li>
+      <li><a href="#buying">Buy a SIM</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <!-- Hamburger icon (SVG so it never pulls in an external font) -->
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6"  x2="21" y2="6"  />
+        <line x1="3" y1="12" x2="21" y2="12" />
+        <line x1="3" y1="18" x2="21" y2="18" />
+      </svg>
+    </button>
+  </div>
+</nav>
+
+
+<!-- ============================================================
+     SECTION 1 · HERO
+     ============================================================ -->
+<section id="hero" class="hero">
+  <!--
+    Hero image: crawler will populate images/full/laos_0000.webp etc.
+    We use the first available photo; CSS background is the fallback.
+    data-fallback-bg keeps the warm earthy colour if the image 404s.
+  -->
+  <img
+    class="hero-img"
+    src="images/full/laos_0000.webp"
+    alt="Tourists in Laos, Mekong riverbank at golden hour"
+    data-fallback-bg="linear-gradient(135deg,#3a2010,#1A5F6A)"
+    onerror="this.style.display='none'"
+  />
+  <div class="hero-overlay" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <p class="hero-kicker">The independent traveller's guide · 2025–2026</p>
+    <h1>Stay Connected&nbsp;in&nbsp;Laos</h1>
+    <p class="hero-tagline">
+      Honest, up-to-date advice on SIM cards and eSIMs for tourists —
+      from the riverside streets of Luang Prabang to the remote trails of the north.
+    </p>
+    <a href="#comparison" class="hero-cta">Compare Options</a>
+  </div>
+
+  <div class="hero-scroll-hint" aria-hidden="true">Scroll</div>
+</section>
+
+
+<!-- ============================================================
+     QUICK RECOMMENDATION BANNER
+     Data source: report §Quick Recommendation table
+     ============================================================ -->
+<section class="quick-rec" aria-label="Quick recommendations">
+  <div class="container">
+    <span class="section-label">Quick Pick</span>
+    <h2>Find Your Best Match</h2>
+
+    <div class="rec-grid" role="list">
+
+      <div class="rec-card" role="listitem">
+        <div class="use-case">Best value overall</div>
+        <div class="best-option">Unitel local SIM — ~$4–9 for 30–90 GB / 30 days</div>
+      </div>
+
+      <div class="rec-card" role="listitem">
+        <div class="use-case">Pre-arrival convenience</div>
+        <div class="best-option">Internet in Laos eSIM or Gigago — Unitel network, local prices</div>
+      </div>
+
+      <div class="rec-card" role="listitem">
+        <div class="use-case">Multi-country SEA trip</div>
+        <div class="best-option">Airalo Asialink regional plan — not the Laos-specific one</div>
+      </div>
+
+      <div class="rec-card" role="listitem">
+        <div class="use-case">No eSIM-compatible phone</div>
+        <div class="best-option">Unitel physical SIM — airport or city shop, passport required</div>
+      </div>
+
+      <div class="rec-card" role="listitem">
+        <div class="use-case">Short stay (1–3 days)</div>
+        <div class="best-option">Any eSIM with at least 5 GB will do the job</div>
+      </div>
+
+    </div>
+
+    <p style="margin-top:28px;font-size:0.88rem;color:rgba(255,255,255,0.7);max-width:680px;">
+      Local SIMs (especially Unitel) offer dramatically better value than international eSIMs.
+      International eSIMs are worth the premium only if you need pre-arrival setup or seamless multi-country coverage.
+    </p>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 2 · QUICK COMPARISON TABLE
+     Data: report §Pricing Comparison Table
+     Sticky header works without JS; JS adds column sorting.
+     ============================================================ -->
+<section id="comparison" class="comparison">
+  <div class="container">
+    <span class="section-label">Side by Side</span>
+    <h2 class="section-heading">SIM &amp; eSIM Comparison</h2>
+    <p class="section-intro">
+      All prices approximate, based on March 2026 data. Verify directly with providers before purchasing.
+    </p>
+
+    <div class="table-wrapper" role="region" aria-label="SIM card comparison table" tabindex="0">
+      <table class="comp-table">
+        <thead>
+          <tr>
+            <th data-sort>Provider</th>
+            <th data-sort>Type</th>
+            <th data-sort class="best-col">Data</th>
+            <th data-sort>Price (USD)</th>
+            <th data-sort>Validity</th>
+            <th data-sort>Network</th>
+            <th>eSIM?</th>
+            <th>Best&nbsp;For</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- ── Local SIMs ───────────────────────────────── -->
+          <tr class="best-row">
+            <td><strong>Unitel (U-Mobile)</strong></td>
+            <td>Physical SIM</td>
+            <td class="best-col">60 GB</td>
+            <td>~$7–8</td>
+            <td>30 days</td>
+            <td>Unitel</td>
+            <td><span class="badge badge-no">Physical only</span></td>
+            <td><span class="badge badge-best">Best value</span></td>
+          </tr>
+          <tr>
+            <td>Unitel — Tourist Basic</td>
+            <td>Physical SIM</td>
+            <td class="best-col">8 GB</td>
+            <td>~$3–4</td>
+            <td>7 days</td>
+            <td>Unitel</td>
+            <td><span class="badge badge-no">Physical only</span></td>
+            <td>Short visits</td>
+          </tr>
+          <tr>
+            <td>Unitel — Tourist Max</td>
+            <td>Physical SIM</td>
+            <td class="best-col">90 GB</td>
+            <td>~$8–9</td>
+            <td>30 days</td>
+            <td>Unitel</td>
+            <td><span class="badge badge-no">Physical only</span></td>
+            <td>Heavy data users</td>
+          </tr>
+          <tr>
+            <td>Unitel — Unlimited</td>
+            <td>Physical SIM</td>
+            <td class="best-col">Unlimited*</td>
+            <td>~$10–12</td>
+            <td>30 days</td>
+            <td>Unitel</td>
+            <td><span class="badge badge-no">Physical only</span></td>
+            <td>Streamers / hotspot</td>
+          </tr>
+          <tr>
+            <td>Lao Telecom (LTC)</td>
+            <td>Physical SIM</td>
+            <td class="best-col">25 GB</td>
+            <td>~$6</td>
+            <td>30 days</td>
+            <td>LTC</td>
+            <td><span class="badge badge-no">Physical only</span></td>
+            <td>South Laos</td>
+          </tr>
+          <tr>
+            <td>Lao Telecom — 7-day</td>
+            <td>Physical SIM</td>
+            <td class="best-col">10 GB</td>
+            <td>~$4</td>
+            <td>7 days</td>
+            <td>LTC</td>
+            <td><span class="badge badge-no">Physical only</span></td>
+            <td>Short stays, south</td>
+          </tr>
+
+          <!-- ── Local eSIMs ──────────────────────────────── -->
+          <tr class="best-row">
+            <td><strong>Internet in Laos</strong></td>
+            <td>eSIM</td>
+            <td class="best-col">30 GB</td>
+            <td>~$7</td>
+            <td>30 days</td>
+            <td>Unitel (native)</td>
+            <td><span class="badge badge-yes">eSIM</span></td>
+            <td><span class="badge badge-best">Pre-arrival pick</span></td>
+          </tr>
+          <tr>
+            <td>Internet in Laos — 15-day</td>
+            <td>eSIM</td>
+            <td class="best-col">10 GB</td>
+            <td>~$5</td>
+            <td>15 days</td>
+            <td>Unitel (native)</td>
+            <td><span class="badge badge-yes">eSIM</span></td>
+            <td>Short trips</td>
+          </tr>
+          <tr>
+            <td>Gigago</td>
+            <td>eSIM</td>
+            <td class="best-col">~30 GB</td>
+            <td>~$8–10</td>
+            <td>30 days</td>
+            <td>Unitel (native)</td>
+            <td><span class="badge badge-yes">eSIM</span></td>
+            <td>Pre-arrival</td>
+          </tr>
+
+          <!-- ── International eSIMs ──────────────────────── -->
+          <tr>
+            <td>Airalo — Asialink</td>
+            <td>eSIM</td>
+            <td class="best-col">10 GB</td>
+            <td>~$26</td>
+            <td>30 days</td>
+            <td>Multiple</td>
+            <td><span class="badge badge-yes">eSIM</span></td>
+            <td>Multi-country SEA</td>
+          </tr>
+          <tr>
+            <td>Airalo — Asialink 5 GB</td>
+            <td>eSIM</td>
+            <td class="best-col">5 GB</td>
+            <td>~$16</td>
+            <td>30 days</td>
+            <td>Multiple</td>
+            <td><span class="badge badge-yes">eSIM</span></td>
+            <td>Light multi-country</td>
+          </tr>
+          <tr>
+            <td>Holafly</td>
+            <td>eSIM</td>
+            <td class="best-col">Unlimited*</td>
+            <td>~$62</td>
+            <td>30 days</td>
+            <td>Unitel</td>
+            <td><span class="badge badge-yes">eSIM</span></td>
+            <td>Unlimited data fans</td>
+          </tr>
+          <tr>
+            <td>Holafly — 7 days</td>
+            <td>eSIM</td>
+            <td class="best-col">Unlimited*</td>
+            <td>~$27</td>
+            <td>7 days</td>
+            <td>Unitel</td>
+            <td><span class="badge badge-yes">eSIM</span></td>
+            <td>Short-stay unlimited</td>
+          </tr>
+          <tr>
+            <td>Nomad (Asia)</td>
+            <td>eSIM</td>
+            <td class="best-col">20 GB</td>
+            <td>~$35</td>
+            <td>30 days</td>
+            <td>Various</td>
+            <td><span class="badge badge-yes">eSIM</span></td>
+            <td>Regional travellers</td>
+          </tr>
+          <tr>
+            <td>Nomad — 10 GB</td>
+            <td>eSIM</td>
+            <td class="best-col">10 GB</td>
+            <td>~$22</td>
+            <td>30 days</td>
+            <td>Various</td>
+            <td><span class="badge badge-yes">eSIM</span></td>
+            <td>Moderate usage</td>
+          </tr>
+          <tr>
+            <td>Saily — 5 GB</td>
+            <td>eSIM</td>
+            <td class="best-col">5 GB</td>
+            <td>~$12</td>
+            <td>30 days</td>
+            <td>Various</td>
+            <td><span class="badge badge-yes">eSIM</span></td>
+            <td>Budget eSIM option</td>
+          </tr>
+          <tr>
+            <td>Saily — 3 GB</td>
+            <td>eSIM</td>
+            <td class="best-col">3 GB</td>
+            <td>~$8</td>
+            <td>30 days</td>
+            <td>Various</td>
+            <td><span class="badge badge-yes">eSIM</span></td>
+            <td>Very light users</td>
+          </tr>
+          <tr>
+            <td>Maya Mobile</td>
+            <td>eSIM</td>
+            <td class="best-col">3 GB</td>
+            <td>~$12</td>
+            <td>15 days</td>
+            <td>Various</td>
+            <td><span class="badge badge-yes">eSIM</span></td>
+            <td>Short urban stay</td>
+          </tr>
+          <!-- ── Avoid row ─────────────────────────────────── -->
+          <tr>
+            <td>Airalo — Laos country</td>
+            <td>eSIM</td>
+            <td class="best-col">10 GB</td>
+            <td>~$20</td>
+            <td>30 days</td>
+            <td><strong>ETL ⚠</strong></td>
+            <td><span class="badge badge-yes">eSIM</span></td>
+            <td><span class="badge badge-avoid">Avoid — poor rural</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="font-size:0.8rem;color:var(--mid-grey);margin-top:12px;">
+      * Unlimited = throttled after daily fair-use cap. Click column headers to sort.
+    </p>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 3 · PROVIDER CARDS
+     Data: report §Local SIM Cards + §International eSIM Providers
+           + §Local eSIM Providers
+     ============================================================ -->
+<section id="providers" class="providers">
+  <div class="container">
+    <span class="section-label">The Providers</span>
+    <h2 class="section-heading">Who's Selling What</h2>
+    <p class="section-intro">
+      From the airport shop to a pre-loaded eSIM — here's every option worth knowing about.
+    </p>
+
+    <div class="providers-grid">
+
+      <!-- ── UNITEL ──────────────────────────────────────── -->
+      <article class="provider-card">
+        <div class="card-img-wrap" style="background:#1A5F6A;">
+          <img
+            src="images/thumbs/laos_0001.webp"
+            alt="Unitel Laos shop"
+            data-fallback-bg="#1A5F6A"
+            onerror="this.style.display='none'"
+            loading="lazy"
+          />
+          <div class="card-best-for">Top Pick</div>
+        </div>
+        <div class="card-body">
+          <div class="card-type">Local Physical SIM</div>
+          <h3>Unitel (U-Mobile)</h3>
+          <p class="card-network">Network: Unitel 4G/5G — ~50% market share · Ookla Speedtest Award winner</p>
+          <div class="card-price">~$3–12 <span>/ plan</span></div>
+          <div class="pros-cons">
+            <div class="pros">
+              <strong>Pros</strong>
+              <ul>
+                <li>Best nationwide coverage</li>
+                <li>Fastest speeds in Laos</li>
+                <li>Cheapest prices overall</li>
+                <li>Available at both airports</li>
+                <li>5G in Vientiane (2025)</li>
+              </ul>
+            </div>
+            <div class="cons">
+              <strong>Cons</strong>
+              <ul>
+                <li>Must buy in-country</li>
+                <li>Passport required</li>
+                <li>Physical card only</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── LAO TELECOM (LTC) ───────────────────────────── -->
+      <article class="provider-card">
+        <div class="card-img-wrap" style="background:#C4622D;">
+          <img
+            src="images/thumbs/laos_0002.webp"
+            alt="Lao Telecom LTC network"
+            data-fallback-bg="#C4622D"
+            onerror="this.style.display='none'"
+            loading="lazy"
+          />
+          <div class="card-best-for">South Laos</div>
+        </div>
+        <div class="card-body">
+          <div class="card-type">Local Physical SIM</div>
+          <h3>Lao Telecom (LTC)</h3>
+          <p class="card-network">Network: LTC 4G — ~30% market share · strong southern coverage</p>
+          <div class="card-price">~$4–6 <span>/ plan</span></div>
+          <div class="pros-cons">
+            <div class="pros">
+              <strong>Pros</strong>
+              <ul>
+                <li>Good second choice</li>
+                <li>Strong in south Laos</li>
+                <li>Solid at 4000 Islands</li>
+                <li>Competitive in Vientiane</li>
+              </ul>
+            </div>
+            <div class="cons">
+              <strong>Cons</strong>
+              <ul>
+                <li>Weaker north coverage</li>
+                <li>Fewer retail locations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── INTERNET IN LAOS eSIM ───────────────────────── -->
+      <article class="provider-card">
+        <div class="card-img-wrap" style="background:#134950;">
+          <img
+            src="images/thumbs/laos_0003.webp"
+            alt="eSIM for Laos"
+            data-fallback-bg="#134950"
+            onerror="this.style.display='none'"
+            loading="lazy"
+          />
+          <div class="card-best-for">Best eSIM</div>
+        </div>
+        <div class="card-body">
+          <div class="card-type">Local eSIM — Unitel native</div>
+          <h3>Internet in Laos</h3>
+          <p class="card-network">Network: Unitel (native) · local Lao number included</p>
+          <div class="card-price">~$5–9 <span>/ plan</span></div>
+          <div class="pros-cons">
+            <div class="pros">
+              <strong>Pros</strong>
+              <ul>
+                <li>Unitel network + prices</li>
+                <li>Local number for Loca / LCR apps</li>
+                <li>Set up before you land</li>
+                <li>English support</li>
+              </ul>
+            </div>
+            <div class="cons">
+              <strong>Cons</strong>
+              <ul>
+                <li>Less internationally known</li>
+                <li>Off-hours support slower</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── GIGAGO ─────────────────────────────────────── -->
+      <article class="provider-card">
+        <div class="card-img-wrap" style="background:#2A7F8E;">
+          <img
+            src="images/thumbs/laos_0004.webp"
+            alt="Gigago Laos eSIM"
+            data-fallback-bg="#2A7F8E"
+            onerror="this.style.display='none'"
+            loading="lazy"
+          />
+          <div class="card-best-for">Pre-arrival eSIM</div>
+        </div>
+        <div class="card-body">
+          <div class="card-type">Local eSIM — Unitel native</div>
+          <h3>Gigago</h3>
+          <p class="card-network">Network: Unitel (native) · similar pricing to Internet in Laos</p>
+          <div class="card-price">~$8–10 <span>/ plan</span></div>
+          <div class="pros-cons">
+            <div class="pros">
+              <strong>Pros</strong>
+              <ul>
+                <li>Unitel quality at local rates</li>
+                <li>eSIM convenience</li>
+                <li>Trusted by travel bloggers</li>
+              </ul>
+            </div>
+            <div class="cons">
+              <strong>Cons</strong>
+              <ul>
+                <li>Less prominent brand</li>
+                <li>Verify availability first</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── HOLAFLY ─────────────────────────────────────── -->
+      <article class="provider-card">
+        <div class="card-img-wrap" style="background:#8B5A2B;">
+          <img
+            src="images/thumbs/laos_0005.webp"
+            alt="Holafly eSIM Laos"
+            data-fallback-bg="#8B5A2B"
+            onerror="this.style.display='none'"
+            loading="lazy"
+          />
+          <div class="card-best-for">Unlimited data</div>
+        </div>
+        <div class="card-body">
+          <div class="card-type">International eSIM</div>
+          <h3>Holafly</h3>
+          <p class="card-network">Network: Unitel · unlimited plans (fair-use throttled)</p>
+          <div class="card-price">~$19–90 <span>/ plan</span></div>
+          <div class="pros-cons">
+            <div class="pros">
+              <strong>Pros</strong>
+              <ul>
+                <li>Unlimited data</li>
+                <li>Uses Unitel network</li>
+                <li>No data-cap anxiety</li>
+                <li>Good customer support</li>
+              </ul>
+            </div>
+            <div class="cons">
+              <strong>Cons</strong>
+              <ul>
+                <li>7–10× more expensive than local SIM</li>
+                <li>Throttled after daily cap</li>
+                <li>Data-only (no calls/SMS)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── AIRALO (ASIALINK) ───────────────────────────── -->
+      <article class="provider-card">
+        <div class="card-img-wrap" style="background:#6B4A35;">
+          <img
+            src="images/thumbs/laos_0006.webp"
+            alt="Airalo Asialink eSIM Southeast Asia"
+            data-fallback-bg="#6B4A35"
+            onerror="this.style.display='none'"
+            loading="lazy"
+          />
+          <div class="card-best-for">Multi-country</div>
+        </div>
+        <div class="card-body">
+          <div class="card-type">International eSIM — Regional</div>
+          <h3>Airalo — Asialink</h3>
+          <p class="card-network">Network: Multiple (avoid the Laos-country plan — uses weak ETL)</p>
+          <div class="card-price">~$11–26 <span>/ plan</span></div>
+          <div class="pros-cons">
+            <div class="pros">
+              <strong>Pros</strong>
+              <ul>
+                <li>Easy app experience</li>
+                <li>Multi-country SEA coverage</li>
+                <li>Widely available</li>
+              </ul>
+            </div>
+            <div class="cons">
+              <strong>Cons</strong>
+              <ul>
+                <li>Laos country plan = ETL (avoid)</li>
+                <li>Less data per dollar than local</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── NOMAD ─────────────────────────────────────────── -->
+      <article class="provider-card">
+        <div class="card-img-wrap" style="background:#3a5a4a;">
+          <img
+            src="images/thumbs/laos_0007.webp"
+            alt="Nomad eSIM Asia"
+            data-fallback-bg="#3a5a4a"
+            onerror="this.style.display='none'"
+            loading="lazy"
+          />
+          <div class="card-best-for">Regional flex</div>
+        </div>
+        <div class="card-body">
+          <div class="card-type">International eSIM — Regional</div>
+          <h3>Nomad</h3>
+          <p class="card-network">Network: Various Asia partners · available via regional plan</p>
+          <div class="card-price">~$10–35 <span>/ plan</span></div>
+          <div class="pros-cons">
+            <div class="pros">
+              <strong>Pros</strong>
+              <ul>
+                <li>Competitive among int'l eSIMs</li>
+                <li>Good app experience</li>
+                <li>Flexible data tiers</li>
+              </ul>
+            </div>
+            <div class="cons">
+              <strong>Cons</strong>
+              <ul>
+                <li>Laos partner not always clear</li>
+                <li>Verify network before buying</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── SAILY ──────────────────────────────────────────── -->
+      <article class="provider-card">
+        <div class="card-img-wrap" style="background:#2C4A5A;">
+          <img
+            src="images/thumbs/laos_0008.webp"
+            alt="Saily eSIM Laos"
+            data-fallback-bg="#2C4A5A"
+            onerror="this.style.display='none'"
+            loading="lazy"
+          />
+          <div class="card-best-for">Budget eSIM</div>
+        </div>
+        <div class="card-body">
+          <div class="card-type">International eSIM (by NordVPN)</div>
+          <h3>Saily</h3>
+          <p class="card-network">Network: Various · backed by NordVPN team</p>
+          <div class="card-price">~$4–12 <span>/ plan</span></div>
+          <div class="pros-cons">
+            <div class="pros">
+              <strong>Pros</strong>
+              <ul>
+                <li>Affordable entry-level plans</li>
+                <li>Established tech company</li>
+                <li>Easy setup</li>
+              </ul>
+            </div>
+            <div class="cons">
+              <strong>Cons</strong>
+              <ul>
+                <li>Newer provider, fewer Laos reviews</li>
+                <li>Verify Laos network partner</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- /.providers-grid -->
+
+    <!-- ETL / TPlus "avoid" note -->
+    <div class="warning-box" style="margin-top:36px;">
+      <h3>Providers to avoid for rural travel</h3>
+      <ul>
+        <li><strong>ETL (Entreprise des Télécommunications du Laos):</strong> 4G only in Vientiane; poor everywhere else. Notably, Airalo's Laos-country eSIM uses ETL — choose the Asialink regional plan instead.</li>
+        <li><strong>TPlus (Lao Star / formerly Beeline):</strong> 4G in Vientiane only, very limited elsewhere. Not recommended for travellers leaving the capital.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 4 · eSIM GUIDE
+     Data: report §International eSIM Providers + §Local eSIM Providers
+           + §Practical Tips: eSIM Setup + §Registration Requirements
+     ============================================================ -->
+<section id="esim" class="esim-guide">
+  <div class="container">
+    <span class="section-label">Digital SIM</span>
+    <h2 class="section-heading">The eSIM Guide</h2>
+    <p class="section-intro">
+      eSIMs let you activate a data plan before your flight lands. Here's everything you need to know.
+    </p>
+
+    <div class="esim-inner">
+
+      <!-- Left column: what is eSIM + setup steps -->
+      <div class="esim-explainer">
+        <h3 style="font-size:1.3rem;margin-bottom:18px;">What is an eSIM?</h3>
+        <p style="font-size:0.93rem;color:var(--mid-grey);margin-bottom:24px;">
+          An eSIM is a digital SIM card embedded in your phone. Instead of a plastic card, you scan
+          a QR code to install a data plan — no swapping hardware, no queuing at an airport counter.
+          Most flagship phones from 2020 onwards support eSIM.
+        </p>
+
+        <h3 style="font-size:1.2rem;margin-bottom:20px;">Setting It Up</h3>
+
+        <div class="esim-steps">
+
+          <div class="esim-step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h4>Check eSIM compatibility</h4>
+              <p>Go to Settings → General → About on iPhone, or Settings → Network on Android. If you see "eSIM" or "Digital SIM" you're good to go.</p>
+            </div>
+          </div>
+
+          <div class="esim-step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h4>Purchase and download before you travel</h4>
+              <p>Set up your eSIM profile on Wi-Fi at home. This is especially important for Internet in Laos and Gigago — both require online registration at the time of purchase.</p>
+            </div>
+          </div>
+
+          <div class="esim-step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h4>Install the eSIM profile</h4>
+              <p>Scan the QR code sent by your provider, or use the provider's app. Confirm the profile appears in your phone's cellular settings.</p>
+            </div>
+          </div>
+
+          <div class="esim-step">
+            <div class="step-num">4</div>
+            <div class="step-content">
+              <h4>Activate on first use</h4>
+              <p>Most plans activate automatically when you first connect to a Laos tower. Set your eSIM as the preferred data line in your phone settings before landing.</p>
+            </div>
+          </div>
+
+          <div class="esim-step">
+            <div class="step-num">5</div>
+            <div class="step-content">
+              <h4>Keep your home SIM for emergencies</h4>
+              <p>Dual SIM means you can still receive calls and texts on your home number while using the eSIM for data. Turn off data roaming on your home SIM to avoid surprise charges.</p>
+            </div>
+          </div>
+
+          <div class="esim-step">
+            <div class="step-num">6</div>
+            <div class="step-content">
+              <h4>Passport registration (since October 2024)</h4>
+              <p>All eSIMs for Laos require passport registration. For international providers this is done online at checkout; for Internet in Laos / Gigago it happens during purchase. This is standard across Southeast Asia.</p>
+            </div>
+          </div>
+
+        </div><!-- /.esim-steps -->
+      </div><!-- /.esim-explainer -->
+
+      <!-- Right column: ranked eSIM providers -->
+      <div>
+        <div class="esim-providers-list">
+          <h3>eSIM Providers Ranked for Laos</h3>
+
+          <div class="esim-provider-row">
+            <div>
+              <div class="esim-prov-name">1. Internet in Laos</div>
+              <div class="esim-prov-network">Unitel native · local number · best value</div>
+            </div>
+            <div class="esim-prov-price">from ~$5</div>
+          </div>
+
+          <div class="esim-provider-row">
+            <div>
+              <div class="esim-prov-name">2. Gigago</div>
+              <div class="esim-prov-network">Unitel native · trusted by bloggers</div>
+            </div>
+            <div class="esim-prov-price">from ~$8</div>
+          </div>
+
+          <div class="esim-provider-row">
+            <div>
+              <div class="esim-prov-name">3. Holafly</div>
+              <div class="esim-prov-network">Unitel · unlimited plans · heavy users</div>
+            </div>
+            <div class="esim-prov-price">from ~$19</div>
+          </div>
+
+          <div class="esim-provider-row">
+            <div>
+              <div class="esim-prov-name">4. Airalo — Asialink</div>
+              <div class="esim-prov-network">Multi-country · NOT the Laos-country plan</div>
+            </div>
+            <div class="esim-prov-price">from ~$5</div>
+          </div>
+
+          <div class="esim-provider-row">
+            <div>
+              <div class="esim-prov-name">5. Nomad</div>
+              <div class="esim-prov-network">Asia regional · competitive pricing</div>
+            </div>
+            <div class="esim-prov-price">from ~$10</div>
+          </div>
+
+          <div class="esim-provider-row">
+            <div>
+              <div class="esim-prov-name">6. Saily</div>
+              <div class="esim-prov-network">Budget entry-level · by NordVPN team</div>
+            </div>
+            <div class="esim-prov-price">from ~$4</div>
+          </div>
+
+          <div class="esim-provider-row">
+            <div>
+              <div class="esim-prov-name">7. Maya Mobile</div>
+              <div class="esim-prov-network">Short-stay urban plans</div>
+            </div>
+            <div class="esim-prov-price">from ~$12</div>
+          </div>
+
+          <div class="esim-provider-row">
+            <div>
+              <div class="esim-prov-name">8. SimOptions</div>
+              <div class="esim-prov-network">Marketplace model · compare sub-providers</div>
+            </div>
+            <div class="esim-prov-price">varies</div>
+          </div>
+
+          <div class="esim-provider-row">
+            <div>
+              <div class="esim-prov-name">9. Ubigi</div>
+              <div class="esim-prov-network">Global coverage · better for business travel</div>
+            </div>
+            <div class="esim-prov-price">varies</div>
+          </div>
+
+        </div><!-- /.esim-providers-list -->
+
+        <div style="margin-top:20px;padding:16px 20px;background:var(--sand);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--charcoal);">
+          <strong style="color:var(--terra);">One number matters:</strong>
+          If you plan to use Loca or LCR (Vientiane's ride-hailing apps), you need a
+          <em>local Lao phone number</em>. Only Internet in Laos, Gigago, or a Unitel physical SIM
+          provide one. International eSIMs (Airalo, Holafly, Nomad, etc.) are data-only.
+        </div>
+      </div><!-- /right column -->
+
+    </div><!-- /.esim-inner -->
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 5 · COVERAGE
+     Data: report §Coverage Map by Region
+     ============================================================ -->
+<section id="coverage" class="coverage">
+  <div class="container">
+    <span class="section-label">Signal Check</span>
+    <h2 class="section-heading">Coverage by Region</h2>
+    <p class="section-intro">
+      Where will your signal hold? A honest region-by-region breakdown based on current network data.
+    </p>
+
+    <div class="coverage-grid">
+
+      <!-- Vientiane -->
+      <div class="coverage-row">
+        <h4>Vientiane (Capital)</h4>
+        <div class="cov-providers">
+          <div class="cov-item">
+            <span class="cov-name">Unitel</span>
+            <div class="cov-rating"><div class="dot dot-green"></div> 4G / 5G</div>
+          </div>
+          <div class="cov-item">
+            <span class="cov-name">Lao Telecom</span>
+            <div class="cov-rating"><div class="dot dot-green"></div> 4G</div>
+          </div>
+          <div class="cov-item">
+            <span class="cov-name">ETL</span>
+            <div class="cov-rating"><div class="dot dot-green"></div> 4G</div>
+          </div>
+        </div>
+        <p style="font-size:0.78rem;color:rgba(255,255,255,0.55);margin-top:10px;">All providers competitive here</p>
+      </div>
+
+      <!-- Luang Prabang -->
+      <div class="coverage-row">
+        <h4>Luang Prabang</h4>
+        <div class="cov-providers">
+          <div class="cov-item">
+            <span class="cov-name">Unitel</span>
+            <div class="cov-rating"><div class="dot dot-green"></div> 4G</div>
+          </div>
+          <div class="cov-item">
+            <span class="cov-name">Lao Telecom</span>
+            <div class="cov-rating"><div class="dot dot-green"></div> 4G</div>
+          </div>
+          <div class="cov-item">
+            <span class="cov-name">ETL</span>
+            <div class="cov-rating"><div class="dot dot-yellow"></div> 3G only</div>
+          </div>
+        </div>
+        <p style="font-size:0.78rem;color:rgba(255,255,255,0.55);margin-top:10px;">Unitel best for surrounding countryside</p>
+      </div>
+
+      <!-- Vang Vieng -->
+      <div class="coverage-row">
+        <h4>Vang Vieng</h4>
+        <div class="cov-providers">
+          <div class="cov-item">
+            <span class="cov-name">Unitel</span>
+            <div class="cov-rating"><div class="dot dot-green"></div> 4G</div>
+          </div>
+          <div class="cov-item">
+            <span class="cov-name">Lao Telecom</span>
+            <div class="cov-rating"><div class="dot dot-green"></div> 4G</div>
+          </div>
+          <div class="cov-item">
+            <span class="cov-name">ETL</span>
+            <div class="cov-rating"><div class="dot dot-yellow"></div> 3G only</div>
+          </div>
+        </div>
+        <p style="font-size:0.78rem;color:rgba(255,255,255,0.55);margin-top:10px;">Tourist hub, generally good coverage</p>
+      </div>
+
+      <!-- Savannakhet -->
+      <div class="coverage-row">
+        <h4>Savannakhet</h4>
+        <div class="cov-providers">
+          <div class="cov-item">
+            <span class="cov-name">Unitel</span>
+            <div class="cov-rating"><div class="dot dot-green"></div> 4G</div>
+          </div>
+          <div class="cov-item">
+            <span class="cov-name">Lao Telecom</span>
+            <div class="cov-rating"><div class="dot dot-green"></div> 4G</div>
+          </div>
+          <div class="cov-item">
+            <span class="cov-name">ETL</span>
+            <div class="cov-rating"><div class="dot dot-yellow"></div> 3G only</div>
+          </div>
+        </div>
+        <p style="font-size:0.78rem;color:rgba(255,255,255,0.55);margin-top:10px;">Southern hub, solid coverage</p>
+      </div>
+
+      <!-- 4000 Islands -->
+      <div class="coverage-row">
+        <h4>4000 Islands (Si Phan Don)</h4>
+        <div class="cov-providers">
+          <div class="cov-item">
+            <span class="cov-name">Unitel</span>
+            <div class="cov-rating"><div class="dot dot-green"></div> 4G</div>
+          </div>
+          <div class="cov-item">
+            <span class="cov-name">Lao Telecom</span>
+            <div class="cov-rating"><div class="dot dot-green"></div> 4G</div>
+          </div>
+          <div class="cov-item">
+            <span class="cov-name">ETL</span>
+            <div class="cov-rating"><div class="dot dot-red"></div> Poor / none</div>
+          </div>
+        </div>
+        <p style="font-size:0.78rem;color:rgba(255,255,255,0.55);margin-top:10px;">LTC surprisingly strong here too</p>
+      </div>
+
+      <!-- Nong Khiaw / Nam Ou -->
+      <div class="coverage-row">
+        <h4>Nong Khiaw / Nam Ou</h4>
+        <div class="cov-providers">
+          <div class="cov-item">
+            <span class="cov-name">Unitel</span>
+            <div class="cov-rating"><div class="dot dot-green"></div> 3G–4G</div>
+          </div>
+          <div class="cov-item">
+            <span class="cov-name">Lao Telecom</span>
+            <div class="cov-rating"><div class="dot dot-yellow"></div> 3G only</div>
+          </div>
+          <div class="cov-item">
+            <span class="cov-name">ETL</span>
+            <div class="cov-rating"><div class="dot dot-red"></div> Poor / none</div>
+          </div>
+        </div>
+        <p style="font-size:0.78rem;color:rgba(255,255,255,0.55);margin-top:10px;">Unitel recommended for river valley</p>
+      </div>
+
+      <!-- Plain of Jars -->
+      <div class="coverage-row">
+        <h4>Plain of Jars (Xieng Khouang)</h4>
+        <div class="cov-providers">
+          <div class="cov-item">
+            <span class="cov-name">Unitel</span>
+            <div class="cov-rating"><div class="dot dot-green"></div> 3G–4G</div>
+          </div>
+          <div class="cov-item">
+            <span class="cov-name">Lao Telecom</span>
+            <div class="cov-rating"><div class="dot dot-yellow"></div> 3G only</div>
+          </div>
+          <div class="cov-item">
+            <span class="cov-name">ETL</span>
+            <div class="cov-rating"><div class="dot dot-red"></div> Poor / none</div>
+          </div>
+        </div>
+        <p style="font-size:0.78rem;color:rgba(255,255,255,0.55);margin-top:10px;">Remote plateau — Unitel is the only reliable option</p>
+      </div>
+
+      <!-- Remote north -->
+      <div class="coverage-row">
+        <h4>Remote Northern Trekking</h4>
+        <div class="cov-providers">
+          <div class="cov-item">
+            <span class="cov-name">Unitel</span>
+            <div class="cov-rating"><div class="dot dot-yellow"></div> Patchy 3G</div>
+          </div>
+          <div class="cov-item">
+            <span class="cov-name">Lao Telecom</span>
+            <div class="cov-rating"><div class="dot dot-red"></div> Poor</div>
+          </div>
+          <div class="cov-item">
+            <span class="cov-name">ETL</span>
+            <div class="cov-rating"><div class="dot dot-red"></div> None</div>
+          </div>
+        </div>
+        <p style="font-size:0.78rem;color:rgba(255,255,255,0.55);margin-top:10px;">No coverage guarantee — download offline maps</p>
+      </div>
+
+      <!-- Mekong Corridor -->
+      <div class="coverage-row">
+        <h4>Mekong River Corridor</h4>
+        <div class="cov-providers">
+          <div class="cov-item">
+            <span class="cov-name">Unitel</span>
+            <div class="cov-rating"><div class="dot dot-green"></div> 4G most areas</div>
+          </div>
+          <div class="cov-item">
+            <span class="cov-name">Lao Telecom</span>
+            <div class="cov-rating"><div class="dot dot-yellow"></div> 3G–4G</div>
+          </div>
+          <div class="cov-item">
+            <span class="cov-name">ETL</span>
+            <div class="cov-rating"><div class="dot dot-red"></div> Poor / none</div>
+          </div>
+        </div>
+        <p style="font-size:0.78rem;color:rgba(255,255,255,0.55);margin-top:10px;">Unitel best along river towns</p>
+      </div>
+
+      <!-- Border crossings -->
+      <div class="coverage-row">
+        <h4>Laos–Vietnam Border (Route 8/9)</h4>
+        <div class="cov-providers">
+          <div class="cov-item">
+            <span class="cov-name">Unitel</span>
+            <div class="cov-rating"><div class="dot dot-yellow"></div> Patchy</div>
+          </div>
+          <div class="cov-item">
+            <span class="cov-name">Lao Telecom</span>
+            <div class="cov-rating"><div class="dot dot-yellow"></div> Patchy</div>
+          </div>
+          <div class="cov-item">
+            <span class="cov-name">ETL</span>
+            <div class="cov-rating"><div class="dot dot-red"></div> None</div>
+          </div>
+        </div>
+        <p style="font-size:0.78rem;color:rgba(255,255,255,0.55);margin-top:10px;">Coverage improves near towns; gaps in the hills</p>
+      </div>
+
+    </div><!-- /.coverage-grid -->
+
+    <!-- Speed expectations note -->
+    <div class="coverage-note">
+      <strong>Speed expectations:</strong> Vientiane &amp; Luang Prabang — 20–60 Mbps down on Unitel 4G.
+      Smaller towns — 5–20 Mbps. Rural areas — 1–5 Mbps on 3G, sometimes none.
+      5G is live in parts of Vientiane (2025) and significantly faster.
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 6 · BUYING GUIDE
+     Data: report §Practical Tips & Warnings + §Registration Requirements
+     ============================================================ -->
+<section id="buying" class="buying-guide">
+  <div class="container">
+    <span class="section-label">On the Ground</span>
+    <h2 class="section-heading">How to Buy a SIM</h2>
+    <p class="section-intro">
+      Practical steps for picking up a local SIM once you land — or before you leave home.
+    </p>
+
+    <div class="guide-grid">
+
+      <div class="guide-card">
+        <h3>At the Airport</h3>
+        <ol>
+          <li>Unitel and LTC counters are at <strong>Wattay Airport (Vientiane)</strong> and <strong>Luang Prabang Airport</strong>.</li>
+          <li>Have your <strong>passport ready</strong> — registration is mandatory since October 2024 and takes about 5 minutes.</li>
+          <li>Airport prices can be <strong>20–30% higher</strong> than city shops, but plans are still cheap by global standards.</li>
+          <li>City shops offer more plan variety if you can wait — especially the Unitel flagship stores in Vientiane.</li>
+        </ol>
+      </div>
+
+      <div class="guide-card">
+        <h3>In the City</h3>
+        <ul>
+          <li>Unitel shops, convenience stores, and markets stock SIMs throughout Laos.</li>
+          <li>In Vientiane, <strong>7-Eleven</strong> locations carry SIMs and top-up vouchers.</li>
+          <li>Staff at dedicated operator shops speak enough English for the transaction.</li>
+          <li>Look for the official Unitel blue-and-white or LTC branding — avoid touts offering SIMs on the street.</li>
+        </ul>
+      </div>
+
+      <div class="guide-card">
+        <h3>ID Requirements</h3>
+        <ul>
+          <li>Your <strong>passport</strong> is required for all SIM and eSIM purchases under October 2024 regulations.</li>
+          <li>Physical SIMs: shop staff scan and register on the spot.</li>
+          <li>International eSIMs: passport details submitted during online checkout.</li>
+          <li>Internet in Laos / Gigago eSIMs: registration completed during online purchase.</li>
+          <li>This is standard across Southeast Asia and is not unusual.</li>
+        </ul>
+      </div>
+
+      <div class="guide-card">
+        <h3>Topping Up</h3>
+        <ul>
+          <li>Top-up vouchers available at convenience stores, markets, and 7-Eleven (Vientiane).</li>
+          <li>Dial <strong>*121#</strong> to check your Unitel balance.</li>
+          <li>Use the <strong>Unitel app</strong> for in-app top-up (easier than scratch cards).</li>
+          <li>Only use official retailers or the app — fake scratch cards exist.</li>
+        </ul>
+      </div>
+
+    </div><!-- /.guide-grid -->
+
+    <!-- Warnings box -->
+    <div class="warning-box">
+      <h3>Watch out for these</h3>
+      <ul>
+        <li><strong>Airalo Laos eSIM → ETL network:</strong> Well-documented issue — Airalo's Laos-country plan uses the weak ETL network. Always choose the Asialink regional plan instead.</li>
+        <li><strong>"Tourist packages" from strangers:</strong> Buy SIMs only from official operator shops or recognised retailers, not from touts at bus stations or tourist areas.</li>
+        <li><strong>Unofficial top-up sellers:</strong> Stick to convenience stores, official app, or operator shops. Fake scratch cards do circulate.</li>
+        <li><strong>Ride-hailing apps need a local number:</strong> Loca and LCR require a Lao phone number to register. International eSIMs (Airalo, Holafly, Nomad) provide data only — no number. Get a local number from Unitel, Internet in Laos, or Gigago.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 7 · FAQ
+     Data: report §Practical Tips & Warnings + general report content
+     ============================================================ -->
+<section id="faq" class="faq">
+  <div class="container">
+    <span class="section-label">Questions &amp; Answers</span>
+    <h2 class="section-heading" style="text-align:center;">Common Questions</h2>
+    <p class="section-intro" style="margin-left:auto;margin-right:auto;text-align:center;">
+      The things travellers ask most before and after landing in Laos.
+    </p>
+
+    <div class="faq-list">
+
+      <details class="faq-item">
+        <summary class="faq-q">Which SIM gives the best coverage in rural Laos?</summary>
+        <div class="faq-a">
+          <strong>Unitel</strong>, without question. It holds roughly 50% market share and has won the Ookla Speedtest Award for fastest mobile network in Laos. It's the only reliable option in places like the Plain of Jars, Nong Khiaw, and remote northern trekking routes. LTC (Lao Telecom) is a decent backup in the south.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Is the Airalo Laos eSIM any good?</summary>
+        <div class="faq-a">
+          The <strong>Laos-country plan is best avoided</strong>. It runs on the ETL network, which is weak outside Vientiane. Multiple travel bloggers and forums explicitly warn against it. If you want to use Airalo, choose the <strong>Asialink regional plan</strong> instead — it connects to stronger networks including Unitel.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Do I need my passport to buy a SIM in Laos?</summary>
+        <div class="faq-a">
+          <strong>Yes, a passport is required</strong> for all SIM and eSIM purchases since October 2024. For physical SIMs, shop staff scan it on the spot (takes about 5 minutes). For eSIMs, you submit passport details during online checkout. This is standard across Southeast Asia and is nothing to worry about.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Can I get a SIM at the airport?</summary>
+        <div class="faq-a">
+          Yes — <strong>Wattay International Airport (Vientiane)</strong> and <strong>Luang Prabang Airport</strong> both have Unitel and/or LTC counters in arrivals. Prices at the airport are typically 20–30% higher than city shops. Still cheap in absolute terms, and often the most convenient option if you land late.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">What internet speeds can I expect?</summary>
+        <div class="faq-a">
+          On Unitel 4G in Vientiane and Luang Prabang, expect <strong>20–60 Mbps download</strong> — plenty for video calls and streaming. In smaller towns, speeds drop to 5–20 Mbps. Remote and rural areas get 1–5 Mbps on 3G, and occasionally no signal at all. Vientiane has 5G coverage since 2025, which is noticeably faster.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Can I use a Laos SIM to call an Uber / ride-hailing app?</summary>
+        <div class="faq-a">
+          Uber doesn't operate in Laos. The local ride-hailing apps are <strong>Loca</strong> and <strong>LCR</strong> — both require a local Lao phone number to register. International eSIMs (Airalo, Holafly, Nomad, etc.) are <strong>data only</strong> and won't give you a Lao number. To get one, buy a Unitel physical SIM, or use <a href="https://shop.internetlaos.com">Internet in Laos</a> or Gigago eSIM — both include a local number.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Is Holafly worth the price for Laos?</summary>
+        <div class="faq-a">
+          Holafly is around <strong>7–10× more expensive</strong> than a local Unitel SIM for similar or less data. It runs on the Unitel network, so coverage is solid. It's worth considering if you genuinely use a lot of data, hate the idea of running out, or want to avoid any paperwork at all. For most budget and mid-range travellers, a local SIM or Internet in Laos eSIM will serve better.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">What's the cheapest way to get data before I land?</summary>
+        <div class="faq-a">
+          <strong>Internet in Laos</strong> (shop.internetlaos.com) or <strong>Gigago</strong> — both offer eSIMs on the Unitel network at near-local prices (from ~$5). You can buy, install, and activate before your flight. Once you're in Laos, switching to a physical Unitel SIM will always be cheaper, but these two eSIMs are the best pre-arrival option.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Do I need to top up my SIM in Laos?</summary>
+        <div class="faq-a">
+          If you buy a plan with a set validity (e.g. 30 days, 30 GB), you generally don't need to top up unless you run out of data or the plan expires. To check your Unitel balance, dial <strong>*121#</strong>. Top-up vouchers are available at convenience stores and 7-Eleven, or use the Unitel app. Stick to official retailers — fake scratch cards do exist.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Will my eSIM work in Thailand, Vietnam, or Cambodia too?</summary>
+        <div class="faq-a">
+          If you buy a <strong>regional Asia plan</strong> (like Airalo Asialink, Nomad Asia, or Holafly's multi-country options), yes — it'll cover multiple countries. A Laos-specific local SIM or eSIM generally won't roam to neighbouring countries, or will charge high roaming fees. If you're island-hopping across several countries, a regional eSIM makes more sense despite the higher cost per GB.
+        </div>
+      </details>
+
+    </div><!-- /.faq-list -->
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 8 · FOOTER
+     Last updated: March 2026 (report compilation date)
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <h2>Laos SIM Guide</h2>
+      <p>
+        An independent traveller's resource for mobile data in Laos. All provider information
+        is sourced from publicly available data compiled in March 2026. Prices are approximate
+        and may have changed — verify directly with providers before purchasing.
+      </p>
+      <p style="margin-top:12px;">
+        This site has no affiliate relationships with any SIM or eSIM provider. It exists
+        purely to save fellow travellers some homework.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h4>On this page</h4>
+      <ul>
+        <li><a href="#comparison">Compare all options</a></li>
+        <li><a href="#providers">Provider details</a></li>
+        <li><a href="#esim">eSIM setup guide</a></li>
+        <li><a href="#coverage">Coverage by region</a></li>
+        <li><a href="#buying">How to buy a SIM</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <span>Data compiled March 2026 &middot; Research from 2024–2026 sources</span>
+    <span>Prices approximate &middot; No affiliate links &middot; No tracking</span>
+  </div>
+</footer>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
