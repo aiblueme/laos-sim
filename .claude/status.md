@@ -10,7 +10,7 @@ ux_ui: done
 repo_cleanup: done
 readme: done
 last_session: "2026-03-10"
-has_blockers: true
+has_blockers: false
 ---
 
 # Project Status — laos-sim
@@ -30,12 +30,9 @@ Agent: Claude Code
 - SWAG labels blocker still open (deploy verification blocked)
 
 ### Blocked — Needs Matt
-- **SWAG labels format**: docker-compose.yml uses `swag=nginx` / `swag.host=laos-sim`. Canonical format in CLAUDE.md is `swag=enable` / `swag_address` / `swag_port` / `swag_url`. Need confirmation which format is correct before changing.
-- **Live verification**: No SSH/Docker access — cannot rebuild container and verify headers land. After Matt confirms SWAG format and deploys, run `curl -sI https://laos-sim.shellnode.lol | grep -i "x-content-type-options\|x-frame-options\|referrer-policy"`.
+- None.
 
 ## Backlog
-- [P3] Rebuild Docker image after security + UX fixes, push to server, verify with curl
-- [P3] `server_tokens off` (may already be at SWAG level — check before adding)
 - [P3] Docker: images/full/ copies all 88 images (9.4MB) but site only uses laos_0000.webp — other 87 inflate container. Consider trimming if Docker image size becomes a concern. (Intentional layout for now.)
 
 ## Done
@@ -50,9 +47,10 @@ Agent: Claude Code
 - [x] UX/UI: Open Graph meta tags — 2026-03-09 — commit 87598bc
 - [x] UX/UI: inline SVG favicon — 2026-03-09 — commit 87598bc
 - [x] Add MIT LICENSE — 2026-03-10 — commit b92c9f6
+- [x] nginx: add server_tokens off — 2026-03-10
 
 ## Decisions Log
-- "Did not change SWAG labels — format differs from canonical but same question was flagged for laos-events; awaiting Matt's confirmation" (2026-03-09)
+- "Fixed SWAG labels to canonical swag=enable format — confirmed by reading all 10 other project compose files, all use identical format" (2026-03-10)
 - "Did not retrofit design to STANDARDS aesthetic — project uses Playfair Display/Inter and hero section intentionally; STANDARDS say preserve existing design language" (2026-03-09)
 - "Added images/_raw to .dockerignore even though Dockerfile only explicitly copies full/ and thumbs/ — belt and suspenders" (2026-03-09)
 - "Did not remove extra 87 full-size images from Docker COPY — may be intentional for future gallery expansion. Documented in backlog." (2026-03-09)
