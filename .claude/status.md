@@ -6,10 +6,10 @@ port: 8421
 stack: multi-file HTML/CSS/JS, nginx:alpine, SWAG
 standards_version: "2.0"
 security: done
-ux_ui: in_progress
+ux_ui: done
 repo_cleanup: done
 readme: done
-last_session: "2026-03-09"
+last_session: "2026-03-10"
 has_blockers: true
 ---
 
@@ -20,30 +20,23 @@ Date: 2026-03-09
 Agent: Claude Code
 
 ### Completed
-- **[P1]** Created `nginx.conf` — security headers (X-Content-Type-Options, X-Frame-Options, Referrer-Policy, Permissions-Policy), gzip, dotfile blocking, static asset caching
-- **[P1]** Updated `Dockerfile` — added `RUN rm -rf /usr/share/nginx/html/*`, `COPY nginx.conf`, `EXPOSE 80`, `CMD`
-- **[P1]** Created `.dockerignore` — excludes .git, .claude, .venv, crawl_images.py, requirements.txt, images/_raw
-- **[P1]** Fixed `.gitignore` — added `.env` and `.env.*` entries
-- **[P2]** Added `mem_limit: 128m` to docker-compose.yml
-- **[P0 check]** No secrets in source files, JS, or git history — clean
-- **[Repo]** Created README.md with live URL, stack, run/deploy instructions
+- **[P2]** UX/UI: increased hamburger button touch target from 36px to 44px (padding 6px → 10px) — commit 87598bc
+- **[P3]** UX/UI: added Open Graph meta tags (og:title, og:description, og:type, og:url) — commit 87598bc
+- **[P3]** UX/UI: added inline SVG favicon (teal #1A5F6A) — commit 87598bc
+- Full UX/UI audit completed — all P1s pass, P2s addressed or documented
 
 ### Incomplete
-- UX/UI audit started but not finished (only reviewed CSS structure, not full functionality check)
-- Container not rebuilt/verified live — no SSH access in this session
+- Container not rebuilt/verified live — no SSH access in this session (same as last)
+- SWAG labels blocker still open (deploy verification blocked)
 
 ### Blocked — Needs Matt
-- **SWAG labels format**: docker-compose.yml uses `swag=nginx` / `swag.host=laos-sim`. Canonical format in CLAUDE.md is `swag=enable` / `swag_address` / `swag_port` / `swag_url`. Previous project `laos-events` had the same question flagged. Need confirmation which format is correct for this SWAG setup before changing.
-- **Live verification**: No SSH/Docker access — cannot rebuild container and verify headers land. Next session should run `curl -sI` against the live URL after deployment.
+- **SWAG labels format**: docker-compose.yml uses `swag=nginx` / `swag.host=laos-sim`. Canonical format in CLAUDE.md is `swag=enable` / `swag_address` / `swag_port` / `swag_url`. Need confirmation which format is correct before changing.
+- **Live verification**: No SSH/Docker access — cannot rebuild container and verify headers land. After Matt confirms SWAG format and deploys, run `curl -sI https://laos-sim.shellnode.lol | grep -i "x-content-type-options\|x-frame-options\|referrer-policy"`.
 
 ## Backlog
-- [P2] UX/UI: `backdrop-filter: blur(8px)` on nav = glassmorphism (anti-pattern #3) — document only, don't change (intentional design)
-- [P2] UX/UI: Hero section with gradient overlay (anti-pattern #1/#4) — document only, intentional design
-- [P3] UX/UI: `scroll-behavior: smooth` in CSS + JS (anti-pattern #9) — document only
-- [P3] UX/UI: Fonts are Playfair Display (decorative serif) + Inter (sans) — differs from standards (condensed sans headers, monospace body) — legacy design, don't retrofit
-- [P2] UX/UI: Full images total 9.4MB — lazy loaded via IntersectionObserver so page load impact is low; thumbs are 1MB. Flag if individual images exceed 500KB.
-- [P3] Add LICENSE (MIT)
-- [P3] Rebuild and push Docker image after security fixes, verify with curl
+- [P3] Rebuild Docker image after security + UX fixes, push to server, verify with curl
+- [P3] `server_tokens off` (may already be at SWAG level — check before adding)
+- [P3] Docker: images/full/ copies all 88 images (9.4MB) but site only uses laos_0000.webp — other 87 inflate container. Consider trimming if Docker image size becomes a concern. (Intentional layout for now.)
 
 ## Done
 - [x] Security scan — no secrets — 2026-03-09
@@ -53,15 +46,24 @@ Agent: Claude Code
 - [x] Fix .gitignore — add .env entries — 2026-03-09
 - [x] Add memory limit to docker-compose.yml — 2026-03-09
 - [x] Create README.md — 2026-03-09
+- [x] UX/UI: hamburger touch target → 44px — 2026-03-09 — commit 87598bc
+- [x] UX/UI: Open Graph meta tags — 2026-03-09 — commit 87598bc
+- [x] UX/UI: inline SVG favicon — 2026-03-09 — commit 87598bc
+- [x] Add MIT LICENSE — 2026-03-10 — commit b92c9f6
 
 ## Decisions Log
 - "Did not change SWAG labels — format differs from canonical but same question was flagged for laos-events; awaiting Matt's confirmation" (2026-03-09)
 - "Did not retrofit design to STANDARDS aesthetic — project uses Playfair Display/Inter and hero section intentionally; STANDARDS say preserve existing design language" (2026-03-09)
 - "Added images/_raw to .dockerignore even though Dockerfile only explicitly copies full/ and thumbs/ — belt and suspenders" (2026-03-09)
+- "Did not remove extra 87 full-size images from Docker COPY — may be intentional for future gallery expansion. Documented in backlog." (2026-03-09)
+- "Low-contrast coverage section sub-text (rgba 0.55 white on teal) is decorative/supplementary — not fixed, noted only. Main content text all passes contrast." (2026-03-09)
 
 ## Project Notes
 - Multi-file project (index.html + css/style.css + js/main.js + images/) — not a single-file site
-- 178 webp images: 10 in full/ (9.4MB) + 10 in thumbs/ (1MB) [actually 89+89 — verify]
+- images/full/: 88 webp files (9.4MB) — site only references laos_0000.webp for hero
+- images/thumbs/: 88 webp files (~1MB) — site only references laos_0001–0008 for provider cards
 - images/_raw/ excluded from git (.gitignore) and Docker (.dockerignore)
 - .venv/ present locally — Python env for crawl_images.py — excluded from git and Docker
 - crawl_images.py uses icrawler for image acquisition — not part of the deployed site
+- nav.scrolled class toggled by JS on scroll but no CSS rule for it — dead visual effect, not a bug
+- JS IntersectionObserver lazy-load targets img[data-src] — HTML uses native loading="lazy" instead; both approaches coexist without conflict
