@@ -1,6 +1,7 @@
 services:
   laos-sim-app:
     build: .
+    image: laos-sim-app
     container_name: laos-sim-app
     restart: unless-stopped
     mem_limit: 128m
@@ -9,9 +10,16 @@ services:
     networks:
       - swag-network
     labels:
-      # SWAG reverse proxy — create /config/nginx/proxy-confs/laos-sim.subdomain.conf
-      - "swag=nginx"
-      - "swag.host=laos-sim"
+      - "swag=enable"
+      - "swag_address=laos-sim-app"
+      - "swag_port=80"
+      - "swag_url=laos-sim.shellnode.lol"
+      - "homepage.instance=my-vps"
+      - "homepage.name=Laos SIM"
+      - "homepage.group=Laos"
+      - "homepage.href=https://laos-sim.shellnode.lol"
+      - "homepage.icon=mdi-sim"
+      - "homepage.description=Laos SIM card comparison guide"
 
 networks:
   swag-network:
