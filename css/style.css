@@ -128,7 +128,7 @@ h1, h2, h3, h4 {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 6px;
+  padding: 10px;
   color: var(--charcoal);
 }
 
